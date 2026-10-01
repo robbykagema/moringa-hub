@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moringa School SE Curriculum Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+    <header class="border-b border-slate-800 bg-slate-900/80 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-cyan-500/20">M</div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight">Moringa SE Companion</h1>
+                    <p class="text-xs text-slate-400">Full Stack Software Engineering Curriculum</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Complete Roadmap
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                <div class="text-slate-400 text-sm mb-1 font-medium">Phase 0 - 1</div>
+                <div class="text-2xl font-bold text-cyan-400">Frontend Fundamentals</div>
+                <p class="text-xs text-slate-400 mt-2">Git, HTML5, CSS Flexbox/Grid, Vanilla JS DOM Manipulation, Fetch API, and Single Page Applications.</p>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                <div class="text-slate-400 text-sm mb-1 font-medium">Phase 2</div>
+                <div class="text-2xl font-bold text-indigo-400">React.js UI Engineering</div>
+                <p class="text-xs text-slate-400 mt-2">Components, JSX, State & Props, Dynamic Hook Rendering, React Router, and Controlled Forms.</p>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                <div class="text-slate-400 text-sm mb-1 font-medium">Phase 3 - 4</div>
+                <div class="text-2xl font-bold text-emerald-400">Backend & Deployment</div>
+                <p class="text-xs text-slate-400 mt-2">Python OOP, SQL, Flask RESTful APIs, Flask-SQLAlchemy, JWT Auth, and Vercel/Render deployment.</p>
+            </div>
+        </div>
+
+        <section class="glass-panel rounded-2xl p-6 border border-slate-800">
+            <h2 class="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-cyan-400"></i> Git & Repository Deployment Quickstart
+            </h2>
+            <div class="bg-slate-900 rounded-xl p-4 font-mono text-sm text-slate-300 space-y-2 border border-slate-800 overflow-x-auto">
+                <p class="text-slate-500"># 1. Initialize repository</p>
+                <p><span class="text-emerald-400">$</span> git init</p>
+                <p><span class="text-emerald-400">$</span> git add .</p>
+                <p><span class="text-emerald-400">$</span> git commit -m <span class="text-amber-300">"Initial commit: Moringa Full Stack Portfolio Hub"</span></p>
+                <p class="text-slate-500 mt-3"># 2. Link to your GitHub Repository</p>
+                <p><span class="text-emerald-400">$</span> git branch -M main</p>
+                <p><span class="text-emerald-400">$</span> git remote add origin https://github.com/YOUR_GITHUB_USERNAME/moringa-hub.git</p>
+                <p><span class="text-emerald-400">$</span> git push -u origin main</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
